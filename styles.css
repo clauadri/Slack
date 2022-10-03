@@ -1,78 +1,33 @@
 
 
 
-@media screen and (min-width:390px) {
-    .slack-logo{
-      margin-left: 50px;
-    }
-
-    nav{
-      height: 100px;
-    }
-    .nav-btn{
-      display: block;
-    }
-
-    .navbar-menu{
-      position: relative;
-      height: 100px;
-      top: 0;
-      transition: none;
-      text-align: right;
-      margin-right: 50px;
-    }
-
-    .navbar-menu li{
-      display: inline-block;
-      margin: 0 20px;
-      transition: none;
-    }
-
-    .navbar-menu li a {
-       font-size: 16px; 
-    }
-}
-
-
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-
-.slack-logo{
-  width: 100px;
-  height: 25px;
-  margin-left: 20px;
-}
-
 *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
-header{
-  width: 100%;
-  height: 100vh;
-  background-color: #4a154b;
+
+.slack-logo {
+  width: 115px;
+  height: 35px;
+  margin-left: 0px;
 }
-nav{
+
+.slack-logo__menu{
+  display: none;
+  padding-top: 24px;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: #4a154b;
+  
+}
+nav {
+  /* position: relative; */
   width: 100%;
   height: 150px;
   display: flex;
@@ -80,46 +35,251 @@ nav{
   align-items: center;
 
 }
-.nav-btn{
-  color: #fff;
+/* .container-nav{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+} */
+
+.nav-btn {
+  color: rgb(226, 14, 14);
   font-size: 20px;
   cursor:pointer;
-  margin-right: 10px;
+  margin-right: 20px;
   z-index: 1;
   
 }
-.navbar-menu{
+.navbar-menu {
     position: fixed;
     width: 100%;
     height: 0vh;
-    top: 50px;
-    background-color: rgb(20, 139, 139);
-    text-align: center;
+    top: 0px;
+    background-color: white;
+    text-align: left;
     transition: all .5s;
+    padding-left: 8px;
+    font-weight: 600;
 
 }
-.navbar-menu li{
+
+
+.navbar-menu li {
   display: none;
   line-height: 20px;
-  margin: 30px 0px;
-  transition: all .5s;
+  margin: 50px 0px;
+  transition: all .5s ;
+  padding: 4px 0px 8px 12px;
+  font-size: 17.6px;
+  
 }
-.navbar-menu li a{
-  color: rgb(36, 71, 102);
-  font-size: 20px;
-  font-weight: 400;
+.navbar-menu li a {
+  color: black;
+  
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-menu li img{
+ display: block;
+ 
+}
 
-}
-.navbar-menu li a.active, .navbar-menu li a:hover{
+/* .navbar-menu li a.active, .navbar-menu li a:hover {
   color: rgb(180, 28, 28);
   transition: .3s;
-}
-#check-box{
+} */
+#check-box {
   display: none;
 }
-#check-box:checked ~ .navbar-menu{
+#check-box:checked ~ .navbar-menu {
   height: 100vh;
 }
-#check-box:checked ~ .navbar-menu li{
+#check-box:checked ~ .navbar-menu li {
   display: block;
+}
+#check-box:checked ~ .navbar-menu img {
+  display: block;
+}
+
+.navbar-menu__separator{
+  height: 100px;
+}
+.container-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: #4a154b;
+}
+.container-info h1{
+  max-width: 358.81px;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.0625;
+  
+}
+
+.container-info span{
+  color: #ecb22e;
+}
+
+.container-info p{
+  font-size: 16px;
+  margin: 4px 0px 56px;
+  font-weight: 400;
+  line-height: 1.444;
+  letter-spacing: -0.2px;
+}
+
+.container-info a{
+  background-color: white;
+  padding: 19px 40px 20px;
+}
+
+.container-gif video{
+  width:615px;
+  max-height: 400px;
+  height: auto;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.section-enterprises{
+  padding-top: 48px;
+  background-color: #f4ede4;
+  height: 312.13px;
+}
+.container-enterprises{
+  
+  width: 390px;
+  height: 216.63px;
+  padding-left: 15.6px;
+  padding-right: 15.6px;
+}
+.container-enterprises > p{
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.container-enterprises__logos{
+  width: 358.81px;
+  height: 216.63px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+} 
+
+.container-enterprises__logos--airbnb{
+  margin: 10px;
+}
+.container-enterprises__logos--airbnb > img{
+  width: 112px;
+  height: 39px;
+}
+.container-enterprises__logos--nasa{
+  margin: 10px;
+}
+.container-enterprises__logos--nasa > img{
+  width: 67px;
+  height: 60.438px;
+}
+.container-enterprises__logos--uber{
+  margin: 10px;
+}
+.container-enterprises__logos--uber > img{
+  width: 75px;
+  height: 26px;
+}
+.container-enterprises__logos--target{
+  margin: 10px;
+}
+.container-enterprises__logos--target > img{
+  width: 48px;
+  height: 48.688px;
+}
+.container-enterprises__logos--newyorktimes{
+  margin: 10px;
+}
+.container-enterprises__logos--newyorktimes > img{
+  width: 230px;
+  height: 32.563px;
+}
+.container-enterprises__logos--etsy{
+  margin: 10px;
+}
+.container-enterprises__logos--etsy > img{
+  width: 74px;
+  height: 35.5px;
+}
+
+.container-img_teamsell{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: 404px;
+  background-color: #f4ede4;
+}
+.container-img_teamsell > img{
+  
+  width: 325px;
+  height: 400px;
+}
+
+.container-img_teamsell > h1{
+  font-size: 20px;
+  margin: 0px 0px 16px;
+  font-weight: 700;
+  line-height: 1.1875;
+  letter-spacing: -0.3px;
+}
+
+@media screen and (min-width:1085px) {
+  .slack-logo{
+    margin-left: 50px;
+  }
+
+  nav{
+    height: 100px;
+  }
+  .nav-btn{
+    display: none;
+  }
+
+  .navbar-menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #4a154b;
+    color: white;
+    position: relative;
+    height: 100px;
+    top: 0;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .navbar-menu li{
+    display: inline-block;
+    margin: 0 20px;
+    transition: none;
+    font-size: 15px;
+  }
+
+  .navbar-menu li a {
+     font-size: 15px; 
+     color: white;
+  }
+
+  .slack-logo__menu{
+    display: none;
+  }
+
 }
