@@ -44,7 +44,7 @@ nav {
 } */
 
 .nav-btn {
-  color: rgb(226, 14, 14);
+  background-color: grey;
   font-size: 20px;
   cursor:pointer;
   margin-right: 20px;
@@ -76,10 +76,10 @@ nav {
 }
 .navbar-menu li a {
   color: black;
-  
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .navbar-menu li img{
  display: block;
  
@@ -138,8 +138,13 @@ nav {
 .container-info a{
   background-color: white;
   padding: 19px 40px 20px;
+  border-radius: 4px;
+
 }
 
+.container-gif{
+  height: 350px;
+}
 .container-gif video{
   width:615px;
   max-height: 400px;
@@ -218,26 +223,52 @@ nav {
   height: 35.5px;
 }
 
-.container-img_teamsell{
+.container-work-options{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
   width: auto;
   height: 404px;
   background-color: #f4ede4;
 }
-.container-img_teamsell > img{
+.container-work-options > img{
   
   width: 325px;
   height: 400px;
 }
 
-.container-img_teamsell > h1{
-  font-size: 20px;
+.container-work-options > h2{
+  font-size: 32px;
   margin: 0px 0px 16px;
   font-weight: 700;
   line-height: 1.1875;
   letter-spacing: -0.3px;
+  padding-left: 15px;
+}
+
+.container-work-options > p {
+  font-size: 18px;
+  margin: 0px 0px 16px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+.container-work-options > a {
+  color: #1292c5;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 15px;
+
+}
+
+.container-info .google{
+
+  color: white;
+  background-color: #4285f4;
+  padding: 19px 40px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
 }
 
 @media screen and (min-width:1085px) {
